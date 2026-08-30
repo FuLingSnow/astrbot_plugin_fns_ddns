@@ -1,0 +1,4 @@
+# Runtime dependencies are provided by AstrBot or installed on demand.
+aliyun-python-sdk-core
+aliyun-python-sdk-alidns
+requests

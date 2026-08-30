@@ -1,0 +1,38 @@
+{
+    "access_key_id": {
+        "type": "string",
+        "description": "阿里云 AccessKey ID",
+        "hint": "用于调用阿里云 API 的身份凭证，建议使用 RAM 子账号密钥",
+        "default": ""
+    },
+    "access_key_secret": {
+        "type": "string",
+        "description": "阿里云 AccessKey Secret",
+        "hint": "用于调用阿里云 API 的身份凭证，请妥善保管",
+        "default": ""
+    },
+    "domain": {
+        "type": "string",
+        "description": "主域名",
+        "hint": "例如 example.com，不要包含 http:// 或末尾斜杠",
+        "default": ""
+    },
+    "sub_domain": {
+        "type": "string",
+        "description": "子域名",
+        "hint": "例如 www（更新 www.example.com），填 @ 更新主域名 example.com，留空自动设为 @",
+        "default": ""
+    },
+    "check_interval": {
+        "type": "int",
+        "description": "检查间隔（秒）",
+        "hint": "每隔多少秒检查一次公网 IP 是否变化，建议 ≥ 60",
+        "default": 300
+    },
+    "min_cool_second": {
+        "type": "int",
+        "description": "最小更新冷却时间（秒）",
+        "hint": "单次更新后至少等待该秒数才能再次更新，防止阿里云API限流，默认60",
+        "default": 60
+    }
+}
