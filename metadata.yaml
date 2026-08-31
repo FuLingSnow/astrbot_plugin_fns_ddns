@@ -1,7 +1,7 @@
 name: astrbot_plugin_fns_ddns
-display_name: 阿里云DDNS # 用于展示的名字
+display_name: 阿里云DDNS
 desc: 从 API 查询IP调整域名解析
-version: v1.0.1
+version: v1.0.2
 author: FuLingSnow
 license: AGPL-3.0
 repo: https://github.com/FuLingSnow/astrbot_plugin_fns_ddns

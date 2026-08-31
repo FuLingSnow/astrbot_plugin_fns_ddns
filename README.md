@@ -10,7 +10,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-v1.0.1-blue)
+![Version](https://img.shields.io/badge/version-v1.0.2-blue)
 ![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)
 ![License](https://img.shields.io/badge/license-AGPL--3.0-red)
 
@@ -133,6 +133,7 @@ astrbot_plugin_fns_ddns/
 
 ## 更新记录
 
+- **v1.0.2**：统一代码风格并精简仓库配置（按 ruff 规范格式化代码、整理 `.gitattributes`/`.gitignore` 规则）。
 - **v1.0.1**：新增公网 IP 校验，排除回环（127.x.x.x）、私网、链路本地、CGNAT 等非公网地址，防止将内网地址误写入阿里云 DNS 解析；新增插件 Logo（AstrBot 自动识别）。
 - **v1.0.0**：首个版本，支持阿里云 DDNS 自动更新、多接口公网 IP 轮询、重复记录清理与更新冷却。
 

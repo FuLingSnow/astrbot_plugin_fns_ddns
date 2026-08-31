@@ -1,33 +1,20 @@
-# ---- 仓库规范文档（本地保留，不随仓库提交） ----
-PLUGIN_REPO_STANDARD.md
-
-# ---- Python ----
 __pycache__/
 *.py[cod]
 *$py.class
-
-# ---- 虚拟环境 ----
 .venv/
 venv/
 env/
-
-# ---- 缓存与测试产物 ----
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
 htmlcov/
-
-# ---- 日志与临时文件 ----
 *.log
 *.tmp
 *.bak
-
-# ---- 编辑器 / IDE ----
 .idea/
 .vscode/
 *.swp
-
-# ---- 系统文件 ----
+ruff.toml
 .DS_Store
 Thumbs.db

@@ -1,15 +1,4 @@
-# ============================================================
-# AstrBot 插件 .gitattributes
-# 1. 统一换行符为 LF：插件最终运行于 Linux 服务器的 AstrBot 中，
-#    避免在 Windows 上编辑导致 CRLF 混入引发的解析问题。
-# 2. 体积优化：缓存/产物声明为 binary，不参与文本转换与 diff；
-#    打包下载（git archive / GitHub ZIP）时排除无关文件。
-# ============================================================
-
-# ---- 基础：自动文本检测 ----
 * text=auto
-
-# ---- 文本文件统一使用 LF ----
 *.py     text eol=lf
 *.yaml   text eol=lf
 *.yml    text eol=lf
@@ -17,12 +6,8 @@
 *.md     text eol=lf
 *.txt    text eol=lf
 requirements.txt text eol=lf
-
-# ---- Windows 脚本保留 CRLF（如未来添加 .bat/.cmd） ----
 *.bat text eol=crlf
 *.cmd text eol=crlf
-
-# ---- 二进制 / 产物：禁止文本转换，避免仓库体积与 diff 噪音 ----
 *.pyc    binary
 *.pyo    binary
 *.so     binary
@@ -46,10 +31,6 @@ requirements.txt text eol=lf
 *.woff2  binary
 *.ttf    binary
 *.eot    binary
-
-# ---- 体积优化：git archive / GitHub「Download ZIP」时排除 ----
-# 注意：AstrBot 通过 git clone 安装插件时仍会包含这些文件，
-# 阻止它们进入仓库本身请配合 .gitignore 使用。
 __pycache__/     export-ignore
 *.py[cod]        export-ignore
 .pytest_cache/   export-ignore
@@ -63,7 +44,6 @@ env/             export-ignore
 .vscode/         export-ignore
 .gitignore       export-ignore
 .gitattributes   export-ignore
-PLUGIN_REPO_STANDARD.md export-ignore
 *.log            export-ignore
 *.tmp            export-ignore
 *.bak            export-ignore
